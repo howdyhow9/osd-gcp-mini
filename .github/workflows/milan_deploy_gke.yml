@@ -92,7 +92,7 @@ jobs:
 
       - name: Deploy Kafka Infrastructure
         run: |
-          helm upgrade --install strimzi strimzi/strimzi-kafka-operator --namespace kafka --wait
+          helm install strimzi strimzi/strimzi-kafka-operator --namespace kafka --version 0.43.0 --wait
           kubectl apply -f kafka/ -n kafka
 
       - name: Install Superset
