@@ -10,6 +10,8 @@ on:
       - 'trino/**'
       - '.github/workflows/**'
 
+  workflow_dispatch:
+
 env:
   CLUSTER_NAME: osd-k8s-cluster
   CLUSTER_ZONE: us-east1
